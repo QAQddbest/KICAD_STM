@@ -1,0 +1,65 @@
+EESchema Schematic File Version 4
+LIBS:stm32-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "STM32F401RE explore"
+Date "2019.11.14"
+Rev "1.0.0"
+Comp "oliverdd.uestc.edu.cn"
+Comment1 "UESTC"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x19_Odd_Even J1
+U 1 1 5DD3E26B
+P 3100 3950
+F 0 "J1" H 3150 5067 50  0000 C CNN
+F 1 "Conn_02x19_Odd_Even" H 3150 4976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x38_P2.54mm_Vertical" H 3100 3950 50  0001 C CNN
+F 3 "~" H 3100 3950 50  0001 C CNN
+	1    3100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x19_Odd_Even J2
+U 1 1 5DD3F87D
+P 8500 3950
+F 0 "J2" H 8550 5067 50  0000 C CNN
+F 1 "Conn_02x19_Odd_Even" H 8550 4976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x38_P2.54mm_Vertical" H 8500 3950 50  0001 C CNN
+F 3 "~" H 8500 3950 50  0001 C CNN
+	1    8500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR01
+U 1 1 5DD4C286
+P 1950 3250
+F 0 "#PWR01" H 1950 3100 50  0001 C CNN
+F 1 "VDD" V 1968 3377 50  0000 L CNN
+F 2 "" H 1950 3250 50  0001 C CNN
+F 3 "" H 1950 3250 50  0001 C CNN
+	1    1950 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 3250 1950 3250
+$Comp
+L power:GND #PWR02
+U 1 1 5DD4D0FF
+P 2000 3950
+F 0 "#PWR02" H 2000 3700 50  0001 C CNN
+F 1 "GND" V 2005 3822 50  0000 R CNN
+F 2 "" H 2000 3950 50  0001 C CNN
+F 3 "" H 2000 3950 50  0001 C CNN
+	1    2000 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 3950 2900 3950
+$EndSCHEMATC
